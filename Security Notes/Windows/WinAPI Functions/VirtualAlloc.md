@@ -7,7 +7,7 @@ dll: Kernel32.dll
 docs: "[MSDN](https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc)"
 ---
 Date created: 21-02-2023 18:12
-Date modified:  `=dateformat(this.file.ctime, "DDDD, HH:mm")`
+Date modified:  `=dateformat(this.file.mtime, "DD-MM-YYYY HH:mm")`
 
 ### Description
 
