@@ -1,0 +1,8 @@
+- Make text bold **
+- Make text italic __
+- Make a header #
+- Inline link [text]\(link\)
+- Image inline, start link with !
+- Block quote, start line with >
+- Soft break - double space
+- [[Test note]]
