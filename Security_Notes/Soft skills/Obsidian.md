@@ -2,6 +2,7 @@
 Keyboard shortcuts:
 - ctrl + k - make link out of highlighted [text](https://www.google.com)
 - ctrl + o - search notes
+- ctrl + p - open command pallete
 - \# used for tags
 - \[ \] task
 - \>[!tip] creates callout
