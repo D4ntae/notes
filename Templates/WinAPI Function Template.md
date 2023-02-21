@@ -5,13 +5,22 @@ name:
 return-type: 
 header: 
 dll: 
+docs: 
 ---
 
-Description
+### Description
 
-Syntax
+### Syntax
 ```c++
 
 ```
 
-Parameters
+### Parameters
+
+| Return | Name      | Info         | Description |
+| ------ | --------- | ------------ | ----------- |
+
+
+### Examples
+
+
