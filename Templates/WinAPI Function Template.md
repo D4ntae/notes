@@ -7,6 +7,8 @@ header:
 dll: 
 docs: 
 ---
+Date created: <% tp.file.creation_date("DD-MM-YYYY HH:mm") %>
+Date modified: <% tp.file.last_modified_date("DD-MM-YYYY HH:mm") %>
 
 ### Description
 
