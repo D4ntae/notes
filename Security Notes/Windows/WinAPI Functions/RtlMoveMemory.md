@@ -32,6 +32,9 @@ VOID RtlMoveMemory(
 | void*  | Source      | In   | Pointer to source       |
 | size_t | Length      | In   | Number of bytes to copy |
 
+###  Return Value
+----
+None
 
 ### Examples
 ----

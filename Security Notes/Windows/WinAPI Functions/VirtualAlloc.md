@@ -33,8 +33,11 @@ LPVOID VirtualAlloc(
 | LPVOID | lpAddress        | in, optional | Starting address of region to allocate        |
 | SIZE_T | dwSize           | in           | Size of region to allocate in bytes           |
 | DWORD  | [[flAllocationType]] | in           | Type of memory allocation                     |
-| DWORD  | [flProtect]()        | in           | Type of memory protection (read, write, etc.) |
+| DWORD  | [flProtect](Memory%20Protection%20Constants.md)        | in           | Type of memory protection (read, write, etc.) |
 
+###  Return Value
+----
+Addres to memory if success, NULL if failure.
 
 ### Examples
 ```cpp

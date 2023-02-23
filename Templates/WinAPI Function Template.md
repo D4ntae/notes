@@ -23,6 +23,8 @@ Date modified: `= dateformat(this.file.mtime, "dd-MM-yyyy HH:mm")`
 | Type | Name      | Info         | Description |
 | ------ | --------- | ------------ | ----------- |
 
+###  Return Value
+----
 
 ### Examples
 ----
