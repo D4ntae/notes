@@ -2,6 +2,7 @@
 date-created: 23-02-2023 14:38
 platform: Windows
 language: C (AutoIT)
+tools: autoit-ripper, x32dbg
 solved: 1
 ---
 
@@ -42,3 +43,5 @@ for i in range(l):
 key = "".join([chr(x) for x in keyA])
 print(key)
 ```
+
+#autoit #c/cpp #completed 
