@@ -17,21 +17,27 @@ Reserves a memory location in the virtual address space of the current process a
 
 ### Syntax
 ----
-```cpp
+```c++
 LPVOID VirtualAlloc(
-  [in, optional] LPVOID lpAddress,
-  [in]           SIZE_T dwSize,
-  [in]           DWORD  flAllocationType,
-  [in]           DWORD  flProtect
+  _In_, _Optional_ LPVOID lpAddress,
+  _In_             SIZE_T dwSize,
+  _In_             DWORD  flAllocationType,
+  _In_             DWORD  flProtect
 );
 ```
 
 ### Parameters
 ----
-| Return | Name      | Info         | Description |
-| ------ | --------- | ------------ | ----------- |
+| Type   | Name             | Info         | Description                                   |
+| ------ | ---------------- | ------------ | --------------------------------------------- |
+| LPVOID | lpAddress        | in, optional | Starting address of region to allocate        |
+| SIZE_T | dwSize           | in           | Size of region to allocate in bytes           |
+| DWORD  | [[flAllocationType]] | in           | Type of memory allocation                     |
+| DWORD  | [flProtect]()        | in           | Type of memory protection (read, write, etc.) |
 
 
 ### Examples
-
+```cpp
+void* code_mem = VirtualAlloc(0, payload_len, MEM_COMMIT | MEM_RESERVE, PAGE_READ_WRITE);
+```
 

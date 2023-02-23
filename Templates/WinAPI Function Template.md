@@ -20,7 +20,7 @@ Date modified: `= dateformat(this.file.mtime, "dd-MM-yyyy HH:mm")`
 
 ### Parameters
 ----
-| Return | Name      | Info         | Description |
+| Type | Name      | Info         | Description |
 | ------ | --------- | ------------ | ----------- |
 
 
