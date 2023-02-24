@@ -31,3 +31,6 @@ int main() {
 }
 ```
 
+<body>
+	<h1 style="color:blue;">A Blue Heading</h1>
+</body>
