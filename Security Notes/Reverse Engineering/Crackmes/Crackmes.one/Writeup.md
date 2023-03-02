@@ -27,4 +27,3 @@ for i in range(l):
 key = "".join([chr(x) for x in keyA])
 print(key)
 ```
-![[Pasted image 20230223145848.png]]
