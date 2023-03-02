@@ -8,6 +8,6 @@
 	- [ ] Has delivery mechanism (trojan, word macro, ...)
 
 
-- [ ] 
+- [ ] PE File analyzer
 
 
