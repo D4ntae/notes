@@ -4,7 +4,7 @@
 		- [ ] reading files
 		- [ ] taking screenshots
 		- [ ] keylogging
-	- [ ] Undetectable by <mark class="hltr-orange">windows</mark> defender
+	- [ ] Undetectable by windows defender
 	- [ ] Has delivery mechanism (trojan, word macro, ...)
 
 
