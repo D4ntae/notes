@@ -36,3 +36,5 @@ psql
 ```
 
 In pgAdmin go into servers, add new server, put the connection on localhost and use password you used for postgres account
+
+#postgres #tutorial
