@@ -74,3 +74,51 @@ let arr: i32 = [1, 2, 3, 4];
 let zeros: i32 = [0; 10];
 ```
 
+Conditional statements
+```rust
+let x: i32 = 0;
+if number == 0 {
+	x = 4;
+} else {
+	x = 3;
+}
+
+
+// If is an expression meaning it can return
+let x: i32 = if number == 0 {4} else {3};
+
+// Must always provide a boolean value, this is not valid
+if x {
+
+}
+```
+
+Loops
+- loop, while and for
+```rust
+// Loops can return
+let res: i32 = loop {
+// Do something
+	break 1;
+}
+
+
+// Loops can have labels so that you can specfiy which loop to break out of
+'label: loop {
+	loop {
+		// Breaks out of whole thing
+		break 'label;
+	}
+}
+
+// For loops
+let arr: i32 = [1, 2, 3, 4, 5]
+for elem in arr {
+	println!("{elem}")
+}
+
+for i in (0..5).rev() {
+
+}
+```
+
