@@ -17,5 +17,11 @@ enum IPAddr {
 let home = IPAddr(127, 0, 0, 1);
 let loopback = IPAddr("::1");
 
-
 ```
+
+The Option\<T\> enum
+- used instead of null to signify a variable that might not have a value
+- must be resolved
+- safer than null
+
+The match statement
