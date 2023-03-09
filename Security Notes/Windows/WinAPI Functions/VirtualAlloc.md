@@ -44,3 +44,4 @@ Addres to memory if success, NULL if failure.
 void* code_mem = VirtualAlloc(0, payload_len, MEM_COMMIT | MEM_RESERVE, PAGE_READ_WRITE);
 ```
 
+#malware
