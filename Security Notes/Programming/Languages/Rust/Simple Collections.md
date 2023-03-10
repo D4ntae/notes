@@ -40,3 +40,6 @@ let mut scores = HashMap::new();
 scores.insert(String::from("Blue Team"), 10);
 scores.insert(String::from("Yellow Team"), 50);
 ```
+
+
+#rust

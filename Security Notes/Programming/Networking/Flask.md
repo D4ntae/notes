@@ -13,3 +13,5 @@ if __name__ == "__main__":
 ```
 
 Decorators are used above functions to specify routes. Example is the index function executes when the route "/" is visited.
+
+#flask #networking #python #servers

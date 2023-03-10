@@ -47,3 +47,6 @@ println!("{}", s);
 Some rules of references
 - If a reference to a variable exists that variable can only be read
 - If a mutable reference to a variable exists that variable cannot be used in any way
+
+
+#rust

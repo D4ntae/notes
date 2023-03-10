@@ -1,7 +1,6 @@
 
 #### Result example
 ```rust
-```rust
 use std::fs::File;
 
 fn main() {
@@ -13,4 +12,6 @@ fn main() {
     };
 }
 ```
-```
+
+
+#rust

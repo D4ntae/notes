@@ -41,3 +41,6 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Client only needs to connect
 client.connect((HOST, PORT))
 ```
+
+
+#python #sockets #servers #networking 

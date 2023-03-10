@@ -54,3 +54,6 @@ fn do_something<'a>(str1: &str, str2: &'a str) -> &'a str {
 	
 }
 ```
+
+
+#rust
