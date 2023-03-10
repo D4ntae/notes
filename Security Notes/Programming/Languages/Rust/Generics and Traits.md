@@ -45,3 +45,12 @@ where
     U: Clone + Debug,
 {}
 ```
+
+#### Lifetimes
+```rust
+
+// The lifetime of the return is based on the lifetime of the second argument
+fn do_something<'a>(str1: &str, str2: &'a str) -> &'a str {
+	
+}
+```
