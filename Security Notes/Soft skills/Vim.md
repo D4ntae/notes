@@ -44,3 +44,7 @@
 
 #### Custom shit
 ----
+###### Plugins
+- telescope - fuzzy finding
+	- rebind \<leader\>ff - bring up search
+	- rebinf \<leader\>gf - bring up git files search
