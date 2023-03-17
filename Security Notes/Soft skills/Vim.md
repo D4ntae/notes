@@ -14,6 +14,9 @@
 - w - move to beginning of next word
 - } - jump to the next paragraph
 - $ - go to the end of the line
+- x - remove character the cursor is on
+- A - append mode
+- i - insert mode
 
 ###### Operators
 - y - yank (copy)
