@@ -1,0 +1,4 @@
+- prefix = ctrl + b
+- prefix + c - new window
+- prefix + , - rename window
+- prefix + (0..=9) - select window
