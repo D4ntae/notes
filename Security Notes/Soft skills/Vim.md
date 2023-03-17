@@ -22,7 +22,7 @@
 
 ##### Tips
 - use a motion twice to apply it to the whole line
-- motions accept number argu
+- motions accept number arguments in front of them
 
 #### .vimrc
 ----
