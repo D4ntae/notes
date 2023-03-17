@@ -6,6 +6,7 @@
 - :find \<file-name\> - search for file name in current directory and open it
 - :s/{phrase to replace}/{phrase to replace with}/ - if g at the end replace all in line, if :s% replace in file, if gc at the end replace in file with promp
 - :! \<cmd\> - execute external command
+
 #### Keybinds
 ----
 ###### Motions
@@ -40,3 +41,6 @@
 #### .vimrc
 ----
 - Nvim location - ~/.config/nvim/init.vim
+
+#### Custom shit
+----
