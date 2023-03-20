@@ -1,16 +1,14 @@
-$#42;
-
 ## Prvi ciklus
 ----
 #### 20.3.2023.
-- [ ] Baze DZ1
+- [x] Baze DZ1
 
 #### 26.3.2023. 23:59
-- [ ] UTR Lab1
+- [x] UTR Lab1
 
 #### 28.3.2023. 15:00
 - krajnji rok može se predat i prije
-- [ ] OS Lab1
+- [x] OS Lab1
 
 #### 3.4.2023.
 - [ ] Baze DZ2
