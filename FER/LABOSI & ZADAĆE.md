@@ -16,10 +16,10 @@
 
 #### 4.4.2023. 15:00
 - krajnji rok može se predat i prije
-- [ ] OS Lab2
+- [x] OS Lab2
 
 #### 4.4.2023. - 6.4.2023.
-- [ ] Kommre Lab1
+- [x] Kommre Lab1
 
 #### 10.4.2023.
 - [ ] Kommre DZ1
