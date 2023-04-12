@@ -8,3 +8,5 @@ Komunicira preko socketa
 Lockbit ransomware
 Briše shadow kopije - briše backupove
 Dodaje se u CurrentVersion\\Run
+SOFTWARE\\LockBit
+Link to tor website lockbitks2tvnmwk.onion
