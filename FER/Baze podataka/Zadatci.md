@@ -19,14 +19,10 @@ GROUP BY ownerid
 ORDER BY lastname DESC;
 
 
-
-
-
-
-
-
-
-
+SELECT tracktitle, trackrating, (SELECT COUNT(ownerid) FROM profiletrack WHERE trackid = p1.trackid AND liked=1)
+FROM movie NATURAL JOIN profiletrack AS p1 NATURAL JOIN track
+WHERE boxincome > 100000000 AND trackrating > 80 AND
+(SELECT COUNT(liked) FROM profiletrack WHERE trackid = p1.trackid AND liked = 1) >= 1;
 
 
 
