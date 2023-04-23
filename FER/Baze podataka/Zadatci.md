@@ -7,10 +7,16 @@ Za svaki film koji je zaradio preko 100,000,000 dolara, ima ocjenu veću od 80 i
 
 ----
 
-Za svaki film koji je izvorno na španjolskom jeziku ispišite naslov filma. Dodatno za svaki film na španjolskom ako njegov 
+Za svaki film koji je izvorno na španjolskom jeziku ispišite naslov filma. Dodatno za svaki film na španjolskom ako njegov prethodnik ima prijevod (titlove) na engleskom jeziku ispišite i naslov prethodnika inače ispišite NULL.
+Rezultate poredajte po naslovu prethodnika.
 
 
 
+SELECT firstname, lastname, COUNT(profilename)
+FROM owner NATURAL JOIN profile
+WHERE owner.gender = 'F' AND owner.firstname LIKE 'A%'
+GROUP BY ownerid
+ORDER BY lastname DESC;
 
 
 
@@ -59,4 +65,12 @@ WHERE boxincome > 100000000 AND trackrating > 80 AND
 (SELECT COUNT(liked) FROM profiletrack WHERE trackid = up.trackid AND liked = 1) >= 1
 ```
 ----
-
+```sql
+SELECT mt1.tracktitle, mt2.tracktitle
+FROM 
+(movie NATURAL JOIN track NATURAL JOIN (audiolang JOIN language ON audiolangid = langid)) as mt1 LEFT JOIN 
+(movie NATURAL JOIN track NATURAL JOIN (subtitle JOIN language ON subtitlelangid = langid)) as mt2
+ON mt1.prevmovieid = mt2.trackid AND mt2.langname = 'English'
+WHERE mt1.langname = 'Spanish' AND mt1.isNative = 1
+ORDER BY mt2.tracktitle
+```
