@@ -1,0 +1,1 @@
+- [ ] Write a obfuscation / encryption tool that simplifies payload encryption / obfuscation
