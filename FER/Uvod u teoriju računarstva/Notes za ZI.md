@@ -29,4 +29,24 @@ Univerzalni jezik Lu nije rekurzivan, odnosno nije odlučiv
 
 Dijagonalan jezik nije niti izračunljiv niti odlučiv tj. viša razina je čak i od rekurzivno prebrojivih jezika
 
-Kontekstno ovisni jezici su zatvorni s obzirom na sve operai
+Kontekstno ovisni jezici su zatvorni s obzirom na sve operacije
+
+Komplement determinističkog kontekstno ovisnog jezika jest deterministički  
+kontekstno ovisni jezik
+
+Kontekstno ovisni jezici su pravi podskup rekurzivnih jezika
+
+![[Pasted image 20230528192330.png]]
+
+![[Pasted image 20230528192403.png]]
+
+Ako TS MI s k radnih traka prostome složenosti S(n) prihvaća jezik L(M1), onda postoj i TS M2 s jednom radnom trakom koji je jednake prostome složenosti S(n) i koji prihvaća jezik L(M2)=L(M1)
+
+Ako TS MI s k traka vremenske složenosti T(n) prihvaća jezik L(M ), onda postoj i TS M2 s jednom trakom koji je vremenske složenosti T^2(n) i koji prihvaća jezik L(M2)=L(MI)
+
+Ako je jezik L u klasi DTIME(j(n)), onda je jezik L u klasi  
+DSPACE(j(n))
+
+Ako je jezik L u klasi DSPACE(f(n)) i ako za funkciju f(n) vrijedi f(n) >= log2n onda je jezik L u klasi DTIME(c^f(n)). Vrijednost konstante c ovisi o jeziku L
+
+Ako je jezik L u klasi NSPACE(f(n)) i ako je funkcija f(n) >= log2n potpuno prostorno izgradiva onda je jezik L u klasi DSPACE(f^2(n))
