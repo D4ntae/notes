@@ -1,3 +1,5 @@
+RAT
+
 Sample pristupa internetu jer u importima koristi funkcije za pristup internetu
 ![[Pasted image 20230530150224.png]]
 
@@ -14,3 +16,5 @@ File detektira postojanje debuggera pomoću OutputDebugStringA koja mijenja zadn
 File se upisuje u regkey LocalMachine\\Software\\Microsoft\\Windows\\CurrrentVersion\\Run
 
 Potencijalni server: zzxx9508.codns.com
+
+File ima cmd ili visual mode
