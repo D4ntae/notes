@@ -18,3 +18,5 @@ File se upisuje u regkey LocalMachine\\Software\\Microsoft\\Windows\\CurrrentVer
 Potencijalni server: zzxx9508.codns.com
 
 File ima cmd ili visual mode
+
+File zove SetProcessDEPPolicy(0) da makne DEP zaštitu iz procesa
