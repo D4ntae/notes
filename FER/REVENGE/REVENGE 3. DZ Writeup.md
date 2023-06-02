@@ -19,4 +19,10 @@ U stringovima vidimo nekoliko interesantnih stringova:
 - TestServer|gCIUbXcNYv6tk|ALYac.exe|ALYac|ext.dat|1234|1|1|0|1|1|1515|zzxx9508.codns.com*|1|  - izgleda kao config string, analizirano poslije
 
 #### PEView
-Prva stvar koji
+Prva stvar koju sam primjetio u PEView-u je sekcija s resursima u kojoj se nalazi konfiguracijski string od prije.
+![[Pasted image 20230602162830.png]]
+Nadalje pogled u import tablicu file-a pokazuje da malware pristupa internetu jer importa wsock32.dll i iz njega funkcije potrebne za uspostavljanje socket konekcije. Također primjećujemo funkcije za mijenjanje registry ključeva kao što su RegSetValueExW i RegCreateKeyW.
+Zaglavlja svih sekcija i import tablica su normalne što nam daje doznanja da file vjerojatno nije pakiran ili enkriptiran na neki drugi način.
+
+Iz dosadašnje analize možemo zaključiti da se malware najvjerojatnije spaja na domenu zzxx9508.codns.com i pomoću nje dobija instrukcije što da radi s inficiranim računalom. Da bismo zaključili točno kako to radi i koje su sve mogućnosti ovog malware učitat ćemo ga u ollydbg i IDA-u i dinamički analizirati.
+
