@@ -26,3 +26,5 @@ Zaglavlja svih sekcija i import tablica su normalne što nam daje doznanja da fi
 
 Iz dosadašnje analize možemo zaključiti da se malware najvjerojatnije spaja na domenu zzxx9508.codns.com i pomoću nje dobija instrukcije što da radi s inficiranim računalom. Da bismo zaključili točno kako to radi i koje su sve mogućnosti ovog malware učitat ćemo ga u ollydbg i IDA-u i dinamički analizirati.
 
+## Dinamička analiza
+IDA
