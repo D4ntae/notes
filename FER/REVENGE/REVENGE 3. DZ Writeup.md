@@ -45,4 +45,4 @@ Nakon toga druga setupSettings funkcija uzima CFG resurs string od prije u učit
 CheckMutex funkcija je standardna funkcija koja koristi mutex-e da osigura da samo jedna instanca programa bude pokrenuta u bilo kojem trenutku.
 
 ![[Pasted image 20230603101944.png]]
-Nakon toga program provjerava je li lokacija od kuda je pokrenut C:\\Windows\\ALYac.exe i ako nije zna da je ovo prvi put pokretanja pa
+Nakon toga program provjerava je li lokacija od kuda je pokrenut C:\\Windows\\ALYac.exe i ako nije zna da je ovo prvi put pokretanja pa kopira sam sebe u C:\\Windows\\ALYac.exe i doda registry ključ u HKLM\\ Software\\Microsoft\\Windows\\CurrentVersion\\Run\\ kako bi ostvario perzistenciju.
