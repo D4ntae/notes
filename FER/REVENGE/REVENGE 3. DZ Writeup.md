@@ -40,4 +40,9 @@ Prva funkcija nije interesantna pa krenimo na drugu.
 #### Druga funkcija
 ![[Pasted image 20230602221133.png]]
 ![[Pasted image 20230602221100.png]]
-Prvo vidimo da malware isključuje DEP unutar procesa tj. dozvoljava da dijelovi memorija programa poput segmenta za resurse koji ne bi smio biti 
+Prvo vidimo da malware isključuje DEP unutar procesa tj. dozvoljava da dijelovi memorija programa poput segmenta za resurse koji ne bi smio biti postat executable postanu executable.
+Nakon toga druga setupSettings funkcija uzima CFG resurs string od prije u učitava ga u varijable procesa.
+CheckMutex funkcija je standardna funkcija koja koristi mutex-e da osigura da samo jedna instanca programa bude pokrenuta u bilo kojem trenutku.
+
+![[Pasted image 20230603101944.png]]
+Nakon toga program provjerava je li lokacija od kuda je pokrenut C:\\Windows\\ALYac.exe i ako nije zna da je ovo prvi put pokretanja pa
