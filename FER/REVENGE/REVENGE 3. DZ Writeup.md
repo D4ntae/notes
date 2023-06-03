@@ -24,7 +24,20 @@ Prva stvar koju sam primjetio u PEView-u je sekcija s resursima u kojoj se nalaz
 Nadalje pogled u import tablicu file-a pokazuje da malware pristupa internetu jer importa wsock32.dll i iz njega funkcije potrebne za uspostavljanje socket konekcije. Također primjećujemo funkcije za mijenjanje registry ključeva kao što su RegSetValueExW i RegCreateKeyW.
 Zaglavlja svih sekcija i import tablica su normalne što nam daje doznanja da file vjerojatno nije pakiran ili enkriptiran na neki drugi način.
 
-Iz dosadašnje analize možemo zaključiti da se malware najvjerojatnije spaja na domenu zzxx9508.codns.com i pomoću nje dobija instrukcije što da radi s inficiranim računalom. Da bismo zaključili točno kako to radi i koje su sve mogućnosti ovog malware učitat ćemo ga u ollydbg i IDA-u i dinamički analizirati.
+Iz dosadašnje analize možemo zaključiti da se malware najvjerojatnije spaja na domenu zzxx9508.codns.com i pomoću nje dobija instrukcije što da radi s inficiranim računalom. Da bismo zaključili točno kako to radi i koje su sve mogućnosti ovog malware učitat ćemo ga u Ollydbg i IDA-u i dinamički analizirati.
 
 ## Dinamička analiza
-IDA
+----
+IDA tehnički spada u statičku analizu, ali mislim da se sa svojim graph pogledom i referencama savršeno uklapa u rad s debuggerom.
+Cilj dinamičke analize je detaljno proučavanje rada malware-a i svih njegovih mogućnosti. Kroz cijelu analizu koristi se kombinacija Ollydbg-a i IDA-e.
+
+#### Inicijalno
+Kada prvo učitamo program u Olly i IDA-u vidimo da poziva 4 funkcije. Nekim funkcijama je u IDA-i promijenjeno ime radi lakšeg razumijevanja koda.
+![[Pasted image 20230602215915.png]]
+![[Pasted image 20230602215936.png]]
+Prva funkcija nije interesantna pa krenimo na drugu.
+
+#### Druga funkcija
+![[Pasted image 20230602221133.png]]
+![[Pasted image 20230602221100.png]]
+Prvo vidimo da malware isključuje DEP unutar procesa tj. dozvoljava da dijelovi memorija programa poput segmenta za resurse koji ne bi smio biti 
