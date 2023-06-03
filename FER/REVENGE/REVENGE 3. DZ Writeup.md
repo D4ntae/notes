@@ -56,4 +56,9 @@ Tu je kraj postavljanja i malware kreće uspostavljati vezu s C2 serverom na adr
 
 #### Mogućnosti malware-a
 - Od prije navedene dodatne opcije
-- Čitanje file-ova na računalu
+- Zatvaranje procesa na računalu pomoću TerminateProcess WinAPI-a
+- Čitanje procesa i memorije procesa na računalu pomoću  CreateToolhelp32Snapshot i Toolhelp32ReadProcessMemory WinAPI-a
+- Čitanje, pokretanje, zaustavljanje servisa koji su pokrenuti
+- Upravljanje registry ključevima
+- Enuneracija podataka o sustavu kao što je arhitektura, dostupna memorija, podatci o procesoru itd.
+- Preuzimanje datoteka s URL-ova na računalo
