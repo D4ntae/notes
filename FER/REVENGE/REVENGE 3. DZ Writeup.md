@@ -46,3 +46,14 @@ CheckMutex funkcija je standardna funkcija koja koristi mutex-e da osigura da sa
 
 ![[Pasted image 20230603101944.png]]
 Nakon toga program provjerava je li lokacija od kuda je pokrenut C:\\Windows\\ALYac.exe i ako nije zna da je ovo prvi put pokretanja pa kopira sam sebe u C:\\Windows\\ALYac.exe i doda registry ključ u HKLM\\ Software\\Microsoft\\Windows\\CurrentVersion\\Run\\ kako bi ostvario perzistenciju.
+
+![[Pasted image 20230603124326.png]]
+CreateThread poziv je kako meni izgleda ostatak iz developmenta malware-a jer normalno se ne pozove, ali ako se u config stringu 0 promijeni u 1 pokrene se MessageBox koji nakon što se klikne ok briše registry ključ koji osigurava prezistenciju. 
+Nakon toga slijedi funkcija koja provjerava postojanje opcionalnog DLL-a u resursima koji dodaje neke dodatne mogućnosti malware-u kao što su kontrola desktopa preko VNC protokola, keylogging, kontrola web kamere itd.
+Cijeli popis je na slici ispod.
+![[Pasted image 20230603124857.png]]
+Tu je kraj postavljanja i malware kreće uspostavljati vezu s C2 serverom na adresi zzxx9508.codns.com od kojeg će primat daljenje komande.
+
+#### Mogućnosti malware-a
+- Od prije navedene dodatne opcije
+- Čitanje file-ova na računalu
